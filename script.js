@@ -14,7 +14,7 @@ const scoreContainer = document.getElementById("score-container");
 fetch('questions.json')
     .then(response => response.json())
     .then(data => {
-        quizData = data; // Load the fetched questions into quizData
+        quizData = data.map(q => ({ ...q, answered: false }));
         loadQuestion();  // Load the first question after fetching
     })
     .catch(error => console.error('Error loading quiz data:', error));
@@ -49,13 +49,20 @@ function loadQuestion() {
 function selectAnswer(selectedIndex) {
     const currentQuestion = quizData[currentQuestionIndex];
 
-    if (selectedIndex === currentQuestion.correctAnswer) {
-        score++;
-        document.getElementById('modal-text').textContent = "Correct! " + currentQuestion.explanation;
-        document.body.style.backgroundColor = "green";
+    // Update the score only if the question hasn't been answered yet
+    if (!currentQuestion.answered) {
+        if (selectedIndex === currentQuestion.correctAnswer) {
+            score++;
+            document.getElementById('modal-text').textContent = "Correct! " + currentQuestion.explanation;
+            document.body.style.backgroundColor = "green";
+        } else {
+            document.getElementById('modal-text').textContent = "Incorrect. " + currentQuestion.explanation;
+            document.body.style.backgroundColor = "red";
+        }
+        // Mark the question as answered
+        currentQuestion.answered = true;
     } else {
-        document.getElementById('modal-text').textContent = "Incorrect. " + currentQuestion.explanation;
-        document.body.style.backgroundColor = "red";
+        document.getElementById('modal-text').textContent = "You already answered this question.";
     }
 
     const modal = document.getElementById("explanation-modal");
