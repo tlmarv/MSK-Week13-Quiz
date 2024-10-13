@@ -1,7 +1,6 @@
 let quizData = [];
 let currentQuestionIndex = 0;
 let score = 0;
-let isExplanationShown = false;
 
 const questionContainer = document.getElementById("question-container");
 const choicesContainer = document.getElementById("choices-container");
@@ -14,7 +13,8 @@ const scoreContainer = document.getElementById("score-container");
 fetch('questions.json')
     .then(response => response.json())
     .then(data => {
-        quizData = data.map(q => ({ ...q, answered: false, selectedAnswer: null })); // Track 'answered' and 'selectedAnswer'
+        // Add an 'answered' and 'selectedAnswer' property to each question
+        quizData = data.map(q => ({ ...q, answered: false, selectedAnswer: null }));
         loadQuestion();  // Load the first question after fetching
     })
     .catch(error => console.error('Error loading quiz data:', error));
@@ -53,16 +53,13 @@ function loadQuestion() {
     // Show the explanation if the question has already been answered
     if (currentQuestion.answered) {
         explanationContainer.textContent = currentQuestion.explanation;
+        nextButton.classList.remove("hidden"); // Show the Next button when the question is answered
     }
 
     if (currentQuestionIndex > 0) {
         prevButton.classList.remove("hidden");
     } else {
         prevButton.classList.add("hidden");
-    }
-
-    if (isExplanationShown || currentQuestion.answered) {
-        nextButton.classList.remove("hidden");
     }
 }
 
@@ -97,13 +94,9 @@ function selectAnswer(selectedIndex) {
             }
         });
 
+        // Show the Next button after the question is answered
         nextButton.classList.remove("hidden");
-    } else {
-        explanationContainer.textContent = currentQuestion.explanation; // Show the explanation again
     }
-    
-    const modal = document.getElementById("explanation-modal");
-    modal.style.display = "block";
 }
 
 document.getElementById("close-modal").onclick = function() {
@@ -145,10 +138,7 @@ function resetState() {
 }
 
 nextButton.addEventListener("click", () => {
-    if (isExplanationShown) {
-        isExplanationShown = false;
-        nextQuestion();
-    }
+    nextQuestion();
 });
 
 prevButton.addEventListener("click", () => {
