@@ -1,0 +1,20 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "choices": ["Berlin", "Madrid", "Paris", "Rome"],
+        "correctAnswer": 2,
+        "explanation": "The capital of France is Paris."
+    },
+    {
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "choices": ["Harper Lee", "George Orwell", "J.K. Rowling", "Mark Twain"],
+        "correctAnswer": 0,
+        "explanation": "'To Kill a Mockingbird' was written by Harper Lee."
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "choices": ["Earth", "Jupiter", "Saturn", "Mars"],
+        "correctAnswer": 1,
+        "explanation": "Jupiter is the largest planet in our solar system."
+    }
+]
