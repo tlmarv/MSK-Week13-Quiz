@@ -91,12 +91,13 @@ document.getElementById("close-modal").onclick = function() {
 
 function nextQuestion() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < quizData.length) {
-        loadQuestion();
-    } else {
-        showScore();
-    }
+    showScore()
+    //if (currentQuestionIndex < quizData.length) {
+   //     loadQuestion();
+   // } else {
+   //     showScore();
 }
+
 
 function prevQuestion() {
     if (currentQuestionIndex > 0) {
