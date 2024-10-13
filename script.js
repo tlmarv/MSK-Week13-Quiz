@@ -95,6 +95,7 @@ function nextQuestion() {
         loadQuestion();
     } else {
         showScore();
+    }
 }
 
 
