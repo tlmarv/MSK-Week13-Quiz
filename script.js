@@ -15,8 +15,10 @@ fetch('questions.json')
     .then(response => response.json())
     .then(data => {
         // Add an 'answered' property to each question to track whether it's been answered
-        quizData = data.map(q => ({ ...q, answered: false }));
-        loadQuestion();  // Load the first question after fetching
+        orderedData = data.map(q => ({ ...q, answered: false }));
+        shuffle(orderedData);  // Shuffle the full question list
+        quizData = orderedData.slice(0, 3);  // Select the first 60 questions
+        loadQuestion();  // Load the first question after fetching and randomizing
     })
     .catch(error => console.error('Error loading quiz data:', error));
 
@@ -28,17 +30,6 @@ function shuffle(array) {
     }
     return array;
 }
-
-// Function to select 60 random questions
-function selectRandomQuestions() {
-    shuffle(allQuizData); // Shuffle the full question list
-    quizData = allQuizData.slice(0, 3); // Select the first 60 questions (CHANGE BACK TO 60)
-}
-
-// Load random questions when the app starts
-selectRandomQuestions();
-
-loadQuestion();
 
 function loadQuestion() {
     resetState();
