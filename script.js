@@ -14,7 +14,7 @@ const scoreContainer = document.getElementById("score-container");
 fetch('questions.json')
     .then(response => response.json())
     .then(data => {
-        quizData = data.map(q => ({ ...q, answered: false }));
+        quizData = data.map(q => ({ ...q, answered: false, selectedAnswer: null })); // Track 'answered' and 'selectedAnswer'
         loadQuestion();  // Load the first question after fetching
     })
     .catch(error => console.error('Error loading quiz data:', error));
@@ -31,9 +31,29 @@ function loadQuestion() {
     currentQuestion.choices.forEach((choice, index) => {
         const button = document.createElement("button");
         button.textContent = choice;
-        button.addEventListener("click", () => selectAnswer(index));
+
+        // If the question was previously answered, disable the button and apply the correct styles
+        if (currentQuestion.answered) {
+            button.disabled = true;
+            if (index === currentQuestion.correctAnswer) {
+                button.style.backgroundColor = "green"; // Highlight correct answer
+            } else if (index === currentQuestion.selectedAnswer) {
+                button.style.backgroundColor = "red"; // Highlight the selected incorrect answer
+            } else {
+                button.style.backgroundColor = "gray"; // Other unselected options
+            }
+        } else {
+            // If not answered, attach event listener
+            button.addEventListener("click", () => selectAnswer(index));
+        }
+
         choicesContainer.appendChild(button);
     });
+
+    // Show the explanation if the question has already been answered
+    if (currentQuestion.answered) {
+        explanationContainer.textContent = currentQuestion.explanation;
+    }
 
     if (currentQuestionIndex > 0) {
         prevButton.classList.remove("hidden");
@@ -41,7 +61,7 @@ function loadQuestion() {
         prevButton.classList.add("hidden");
     }
 
-    if (isExplanationShown) {
+    if (isExplanationShown || currentQuestion.answered) {
         nextButton.classList.remove("hidden");
     }
 }
@@ -49,39 +69,41 @@ function loadQuestion() {
 function selectAnswer(selectedIndex) {
     const currentQuestion = quizData[currentQuestionIndex];
 
-    // Update the score only if the question hasn't been answered yet
+    // Update the score and selectedAnswer only if the question hasn't been answered yet
     if (!currentQuestion.answered) {
+        currentQuestion.selectedAnswer = selectedIndex; // Track the selected answer
+
         if (selectedIndex === currentQuestion.correctAnswer) {
             score++;
-            document.getElementById('modal-text').textContent = "Correct! " + currentQuestion.explanation;
+            explanationContainer.textContent = "Correct! " + currentQuestion.explanation;
             document.body.style.backgroundColor = "green";
         } else {
-            document.getElementById('modal-text').textContent = "Incorrect. " + currentQuestion.explanation;
+            explanationContainer.textContent = "Incorrect. " + currentQuestion.explanation;
             document.body.style.backgroundColor = "red";
         }
+        
         // Mark the question as answered
         currentQuestion.answered = true;
-    } else {
-        document.getElementById('modal-text').textContent = "You already answered this question.";
-    }
 
+        const buttons = choicesContainer.querySelectorAll("button");
+        buttons.forEach((button, index) => {
+            button.disabled = true;
+            if (index === currentQuestion.correctAnswer) {
+                button.style.backgroundColor = "green"; // Highlight the correct answer
+            } else if (index === selectedIndex) {
+                button.style.backgroundColor = "red"; // Highlight the selected incorrect answer
+            } else {
+                button.style.backgroundColor = "gray"; // Neutral for unselected options
+            }
+        });
+
+        nextButton.classList.remove("hidden");
+    } else {
+        explanationContainer.textContent = currentQuestion.explanation; // Show the explanation again
+    }
+    
     const modal = document.getElementById("explanation-modal");
     modal.style.display = "block";
-
-    isExplanationShown = true;
-    nextButton.classList.remove("hidden");
-
-    const buttons = choicesContainer.querySelectorAll("button");
-    buttons.forEach((button, index) => {
-        button.disabled = true;
-        if (index === currentQuestion.correctAnswer) {
-            button.style.backgroundColor = "green";
-        } else if (index === selectedIndex) {
-            button.style.backgroundColor = "red";
-        } else {
-            button.style.backgroundColor = "gray";
-        }
-    });
 }
 
 document.getElementById("close-modal").onclick = function() {
