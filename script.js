@@ -1,6 +1,7 @@
 let quizData = [];
 let currentQuestionIndex = 0;
 let score = 0;
+let isExplanationShown = false;
 
 const questionContainer = document.getElementById("question-container");
 const choicesContainer = document.getElementById("choices-container");
@@ -13,8 +14,8 @@ const scoreContainer = document.getElementById("score-container");
 fetch('questions.json')
     .then(response => response.json())
     .then(data => {
-        // Add an 'answered' and 'selectedAnswer' property to each question
-        quizData = data.map(q => ({ ...q, answered: false, selectedAnswer: null }));
+        // Add an 'answered' property to each question to track whether it's been answered
+        quizData = data.map(q => ({ ...q, answered: false }));
         loadQuestion();  // Load the first question after fetching
     })
     .catch(error => console.error('Error loading quiz data:', error));
@@ -31,72 +32,57 @@ function loadQuestion() {
     currentQuestion.choices.forEach((choice, index) => {
         const button = document.createElement("button");
         button.textContent = choice;
-
-        // If the question was previously answered, disable the button and apply the correct styles
-        if (currentQuestion.answered) {
-            button.disabled = true;
-            if (index === currentQuestion.correctAnswer) {
-                button.style.backgroundColor = "green"; // Highlight correct answer
-            } else if (index === currentQuestion.selectedAnswer) {
-                button.style.backgroundColor = "red"; // Highlight the selected incorrect answer
-            } else {
-                button.style.backgroundColor = "gray"; // Other unselected options
-            }
-        } else {
-            // If not answered, attach event listener
-            button.addEventListener("click", () => selectAnswer(index));
-        }
-
+        button.addEventListener("click", () => selectAnswer(index));
         choicesContainer.appendChild(button);
     });
-
-    // Show the explanation if the question has already been answered
-    if (currentQuestion.answered) {
-        explanationContainer.textContent = currentQuestion.explanation;
-        nextButton.classList.remove("hidden"); // Show the Next button when the question is answered
-    }
 
     if (currentQuestionIndex > 0) {
         prevButton.classList.remove("hidden");
     } else {
         prevButton.classList.add("hidden");
     }
+
+    if (isExplanationShown) {
+        nextButton.classList.remove("hidden");
+    }
 }
 
 function selectAnswer(selectedIndex) {
     const currentQuestion = quizData[currentQuestionIndex];
 
-    // Update the score and selectedAnswer only if the question hasn't been answered yet
+    // Update the score only if the question hasn't been answered yet
     if (!currentQuestion.answered) {
-        currentQuestion.selectedAnswer = selectedIndex; // Track the selected answer
-
         if (selectedIndex === currentQuestion.correctAnswer) {
             score++;
-            explanationContainer.textContent = "Correct! " + currentQuestion.explanation;
+            document.getElementById('modal-text').textContent = "Correct! " + currentQuestion.explanation;
             document.body.style.backgroundColor = "green";
         } else {
-            explanationContainer.textContent = "Incorrect. " + currentQuestion.explanation;
+            document.getElementById('modal-text').textContent = "Incorrect. " + currentQuestion.explanation;
             document.body.style.backgroundColor = "red";
         }
-        
         // Mark the question as answered
         currentQuestion.answered = true;
-
-        const buttons = choicesContainer.querySelectorAll("button");
-        buttons.forEach((button, index) => {
-            button.disabled = true;
-            if (index === currentQuestion.correctAnswer) {
-                button.style.backgroundColor = "green"; // Highlight the correct answer
-            } else if (index === selectedIndex) {
-                button.style.backgroundColor = "red"; // Highlight the selected incorrect answer
-            } else {
-                button.style.backgroundColor = "gray"; // Neutral for unselected options
-            }
-        });
-
-        // Show the Next button after the question is answered
-        nextButton.classList.remove("hidden");
+    } else {
+        document.getElementById('modal-text').textContent = currentQuestion.explanation + " You already answered this question.";
     }
+
+    const modal = document.getElementById("explanation-modal");
+    modal.style.display = "block";
+
+    isExplanationShown = true;
+    nextButton.classList.remove("hidden");
+
+    const buttons = choicesContainer.querySelectorAll("button");
+    buttons.forEach((button, index) => {
+        button.disabled = true;
+        if (index === currentQuestion.correctAnswer) {
+            button.style.backgroundColor = "green";
+        } else if (index === selectedIndex) {
+            button.style.backgroundColor = "red";
+        } else {
+            button.style.backgroundColor = "gray";
+        }
+    });
 }
 
 document.getElementById("close-modal").onclick = function() {
@@ -138,9 +124,13 @@ function resetState() {
 }
 
 nextButton.addEventListener("click", () => {
-    nextQuestion();
+    if (isExplanationShown) {
+        isExplanationShown = false;
+        nextQuestion();
+    }
 });
 
 prevButton.addEventListener("click", () => {
     prevQuestion();
 });
+
