@@ -20,6 +20,26 @@ fetch('questions.json')
     })
     .catch(error => console.error('Error loading quiz data:', error));
 
+// Function to shuffle the array
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+// Function to select 60 random questions
+function selectRandomQuestions() {
+    shuffle(allQuizData); // Shuffle the full question list
+    quizData = allQuizData.slice(0, 60); // Select the first 60 questions
+}
+
+// Load random questions when the app starts
+selectRandomQuestions();
+
+loadQuestion();
+
 function loadQuestion() {
     resetState();
     const currentQuestion = quizData[currentQuestionIndex];
