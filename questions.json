@@ -1,20 +1,1209 @@
 [
-    {
-        "question": "What is the capital of France?",
-        "choices": ["Berlin", "Madrid", "Paris", "Rome"],
-        "correctAnswer": 2,
-        "explanation": "The capital of France is Paris."
-    },
-    {
-        "question": "Who wrote 'To Kill a Mockingbird'?",
-        "choices": ["Harper Lee", "George Orwell", "J.K. Rowling", "Mark Twain"],
-        "correctAnswer": 0,
-        "explanation": "'To Kill a Mockingbird' was written by Harper Lee."
-    },
-    {
-        "question": "What is the largest planet in our solar system?",
-        "choices": ["Earth", "Jupiter", "Saturn", "Mars"],
+   {
+    "question": "Which landmark on the sternum articulates with the 2nd ribs and is at the level of the T4/T5 intervertebral disc?",
+    "choices": [
+        "Xiphoid process",
+        "Manubrium",
+        "Sternal angle (of Louis)",
+        "Clavicular notch"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The sternal angle (of Louis) is a key anatomical landmark that articulates with the 2nd ribs and is located at the level of the T4/T5 intervertebral disc."
+},
+{
+    "question": "What is the primary innervation of the pectoralis major muscle?",
+    "choices": [
+        "Long thoracic nerve",
+        "Lateral and medial pectoral nerves",
+        "Axillary nerve",
+        "Musculocutaneous nerve"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The pectoralis major muscle is primarily innervated by the lateral and medial pectoral nerves, which control its movements of adduction, flexion, and medial rotation of the arm."
+},
+{
+    "question": "Which structure is responsible for draining the upper outer quadrant of the breast and may be involved in breast cancer metastasis?",
+    "choices": [
+        "Internal thoracic vein",
+        "Cephalic vein",
+        "Axillary lymph nodes",
+        "Thoracic duct"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The majority of the lymphatic drainage from the breast, particularly from the upper outer quadrant, flows into the axillary lymph nodes, making them critical in the assessment of breast cancer metastasis."
+},
+{
+    "question": "Which part of the brachial plexus gives rise to the long thoracic nerve?",
+    "choices": [
+        "Roots of C5, C6, and C7",
+        "Superior trunk",
+        "Posterior cord",
+        "Inferior trunk"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The long thoracic nerve originates from the roots of C5, C6, and C7 of the brachial plexus and innervates the serratus anterior muscle, which helps prevent winging of the scapula."
+},
+{
+    "question": "Damage to the long thoracic nerve results in which clinical condition?",
+    "choices": [
+        "Erb's palsy",
+        "Klumpke's palsy",
+        "Winged scapula",
+        "Carpal tunnel syndrome"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Injury to the long thoracic nerve causes paralysis of the serratus anterior muscle, leading to a condition called winged scapula, where the scapula protrudes off the thoracic wall."
+},
+{
+    "question": "A 25-year-old male sustains a traumatic injury to his shoulder and is diagnosed with a dislocation of the acromioclavicular joint. Which two bones are involved in this injury?",
+    "choices": [
+        "Clavicle and humerus",
+        "Clavicle and scapula",
+        "Scapula and humerus",
+        "Scapula and sternum"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The acromioclavicular joint is formed by the articulation between the clavicle and the scapula. Dislocation of this joint is a common shoulder injury."
+},
+{
+    "question": "A 55-year-old woman presents with breast cancer and palpable axillary lymph nodes. Which lymphatic drainage pattern is most likely affected?",
+    "choices": [
+        "Parasternal lymph nodes",
+        "Axillary lymph nodes",
+        "Thoracic duct",
+        "Subclavian lymph nodes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The majority of the breast lymph drains into the axillary lymph nodes, especially from the lateral quadrants. Breast cancer often spreads to these nodes first."
+},
+{
+    "question": "A 30-year-old male has difficulty lifting his arm above his head after an axillary surgery. Physical exam reveals a 'winged scapula.' Which nerve was most likely damaged during the procedure?",
+    "choices": [
+        "Axillary nerve",
+        "Long thoracic nerve",
+        "Radial nerve",
+        "Musculocutaneous nerve"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Damage to the long thoracic nerve, which innervates the serratus anterior muscle, can result in winged scapula, a condition in which the medial border of the scapula protrudes off the back."
+},
+{
+    "question": "A patient has difficulty flexing and medially rotating their arm. Examination reveals weakness in a muscle that inserts on the lateral lip of the intertubercular groove of the humerus. Which muscle is most likely involved?",
+    "choices": [
+        "Pectoralis major",
+        "Pectoralis minor",
+        "Deltoid",
+        "Teres major"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The pectoralis major muscle inserts on the lateral lip of the intertubercular groove of the humerus and is responsible for flexing and medially rotating the arm."
+},
+{
+    "question": "A 40-year-old woman has a palpable mass in the upper outer quadrant of her breast. The surgeon plans to excise the mass and is concerned about damaging the lymphatic drainage. What is the primary group of lymph nodes to which this region drains?",
+    "choices": [
+        "Axillary lymph nodes",
+        "Parasternal lymph nodes",
+        "Cervical lymph nodes",
+        "Supraclavicular lymph nodes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The upper outer quadrant of the breast primarily drains to the axillary lymph nodes, which are key structures in breast cancer metastasis."
+},
+{
+    "question": "A patient presents with numbness over the medial aspect of their forearm after trauma to the axilla. Which component of the brachial plexus is most likely affected?",
+    "choices": [
+        "Medial cutaneous nerve of the arm",
+        "Medial cutaneous nerve of the forearm",
+        "Lateral cutaneous nerve of the forearm",
+        "Posterior cutaneous nerve of the arm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The medial cutaneous nerve of the forearm arises from the medial cord of the brachial plexus and is responsible for sensation over the medial aspect of the forearm."
+},
+{
+    "question": "A patient presents with a fracture at the surgical neck of the humerus. Which nerve is most at risk of injury in this region?",
+    "choices": [
+        "Radial nerve",
+        "Ulnar nerve",
+        "Axillary nerve",
+        "Musculocutaneous nerve"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The axillary nerve, which passes around the surgical neck of the humerus, is most at risk of injury in fractures involving this region. Damage can lead to deltoid muscle weakness."
+},
+{
+        "question": "Which nerve is responsible for innervating the biceps brachii muscle?",
+        "choices": [
+            "Axillary nerve",
+            "Musculocutaneous nerve",
+            "Radial nerve",
+            "Ulnar nerve"
+        ],
         "correctAnswer": 1,
-        "explanation": "Jupiter is the largest planet in our solar system."
-    }
+        "explanation": "The musculocutaneous nerve is responsible for innervating the biceps brachii muscle."
+    },
+    {
+        "question": "What is the primary action of the brachialis muscle?",
+        "choices": [
+            "Supination of the forearm",
+            "Flexion of the forearm in all positions",
+            "Pronation of the forearm",
+            "Flexion and adduction of the arm"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The brachialis muscle flexes the forearm in all positions, making it the primary flexor."
+    },
+    {
+        "question": "Which artery is the continuation of the axillary artery and is the chief blood supply to the arm?",
+        "choices": [
+            "Radial artery",
+            "Brachial artery",
+            "Ulnar artery",
+            "Subclavian artery"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The brachial artery is the continuation of the axillary artery and is the main blood supply to the arm."
+    },
+    {
+        "question": "Where does the long head of the biceps brachii attach proximally?",
+        "choices": [
+            "Coracoid process",
+            "Glenoid fossa",
+            "Supraglenoid tubercle",
+            "Greater tubercle"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The long head of the biceps brachii attaches to the supraglenoid tubercle of the scapula."
+    },
+    {
+        "question": "The median nerve passes through which part of the cubital fossa?",
+        "choices": [
+            "Lateral to the brachial artery",
+            "Medial to the biceps tendon",
+            "Lateral to the radial nerve",
+            "Lateral to the brachial artery"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The median nerve passes medial to the biceps tendon in the cubital fossa."
+    },
+    {
+        "question": "A 55-year-old man presents with difficulty flexing his elbow and a loss of sensation in the lateral aspect of his forearm. Which nerve is most likely injured?",
+        "choices": [
+            "Axillary nerve",
+            "Musculocutaneous nerve",
+            "Median nerve",
+            "Ulnar nerve"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The musculocutaneous nerve innervates the muscles responsible for flexing the elbow and provides sensation to the lateral forearm."
+    },
+    {
+        "question": "A patient presents with severe shoulder pain after repetitive overhead throwing motions. You suspect biceps tendinitis. Which part of the biceps is most likely affected?",
+        "choices": [
+            "Short head of the biceps",
+            "Long head of the biceps",
+            "Radial insertion",
+            "Medial head of the biceps"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Biceps tendinitis most commonly affects the long head of the biceps, which runs through the intertubercular groove."
+    },
+    {
+        "question": "A 45-year-old man presents after a fall on his outstretched hand. Imaging reveals a fracture at the surgical neck of the humerus. Which nerve is at risk for injury?",
+        "choices": [
+            "Radial nerve",
+            "Median nerve",
+            "Axillary nerve",
+            "Ulnar nerve"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Fracture of the surgical neck of the humerus puts the axillary nerve at risk for injury."
+    },
+    {
+        "question": "During a physical examination, you tap the biceps tendon with a reflex hammer and observe a diminished response. This test evaluates which nerve and spinal segments?",
+        "choices": [
+            "Radial nerve, C7",
+            "Ulnar nerve, C8",
+            "Musculocutaneous nerve, C5-C6",
+            "Median nerve, C6-C7"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The biceps reflex test evaluates the musculocutaneous nerve and spinal segments C5-C6."
+    },
+    {
+        "question": "A 50-year-old woman presents with a lump in the arm near the elbow. Venipuncture reveals the median cubital vein. What is the anatomical significance of this structure?",
+        "choices": [
+            "It protects the underlying radial artery",
+            "It lies superficial to the bicipital aponeurosis, protecting the brachial artery and median nerve",
+            "It provides deep venous drainage from the arm",
+            "It drains directly into the cephalic vein"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The median cubital vein lies superficial to the bicipital aponeurosis, which protects the brachial artery and median nerve during venipuncture."
+    },
+    {
+        "question": "A 35-year-old male patient presents with a fracture of the distal humerus, which damages the median nerve. Which motor deficit would you expect?",
+        "choices": [
+            "Inability to flex the elbow",
+            "Loss of forearm pronation",
+            "Inability to extend the wrist",
+            "Weakness in supination of the forearm"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Damage to the median nerve can result in loss of forearm pronation, as it innervates muscles responsible for this action."
+    },
+    {
+        "question": "A 28-year-old weightlifter suffers a rupture of the long head of the biceps tendon during a competition. What classic deformity would you expect to observe?",
+        "choices": [
+            "Claw hand deformity",
+            "Popeye deformity",
+            "Drop wrist deformity",
+            "Mallet finger"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Rupture of the long head of the biceps tendon typically results in a 'Popeye deformity,' where the muscle belly forms a ball near the distal part of the arm."
+    },
+    {
+        "question": "Which of the following is a first-line treatment for comedonal acne?",
+        "choices": [
+            "Topical antibiotics",
+            "Benzoyl peroxide",
+            "Topical retinoids",
+            "Oral isotretinoin"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Topical retinoids, such as tretinoin and adapalene, are the first-line treatment for comedonal acne."
+    },
+    {
+        "question": "What is the primary cause of acne vulgaris?",
+        "choices": [
+            "Increased androgen levels",
+            "Occlusion of sebaceous glands",
+            "Immune response to Demodex mites",
+            "Excessive sweating"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Acne vulgaris is primarily caused by occlusion of sebaceous glands and subsequent inflammation."
+    },
+    {
+        "question": "Which condition is commonly treated with oral isotretinoin due to its potential for scarring if untreated?",
+        "choices": [
+            "Comedonal acne",
+            "Mild inflammatory acne",
+            "Nodulocystic acne",
+            "Rosacea"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Nodulocystic acne is severe and can lead to scarring if untreated. Isotretinoin is often required for its management."
+    },
+    {
+        "question": "Which pathogen is commonly associated with tinea capitis?",
+        "choices": [
+            "Staphylococcus aureus",
+            "Malassezia yeast",
+            "Dermatophyte fungi",
+            "Propionibacterium acnes"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tinea capitis is caused by dermatophyte fungi and is treated with oral antifungal medications."
+    },
+    {
+        "question": "Which of the following is NOT typically a trigger for rosacea?",
+        "choices": [
+            "Alcohol consumption",
+            "Hot weather",
+            "Excessive sweating",
+            "Spicy foods"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Excessive sweating is more associated with hyperhidrosis, not rosacea. Common rosacea triggers include alcohol, spicy foods, and heat."
+    },
+    {
+        "question": "A 30-year-old woman presents with papules and pustules localized to her chin and jawline, which worsen during her menstrual cycle. What is the next best treatment option?",
+        "choices": [
+            "Topical retinoids",
+            "Oral contraceptives",
+            "Oral isotretinoin",
+            "Topical antibiotics"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Oral contraceptives are effective in managing hormonally driven acne, especially when it worsens during the menstrual cycle."
+    },
+    {
+        "question": "A 22-year-old male presents with deep-seated nodules and abscesses in the axillary region, as well as scarring and sinus tracts. What is the most likely diagnosis?",
+        "choices": [
+            "Acne vulgaris",
+            "Hidradenitis suppurativa",
+            "Folliculitis",
+            "Tinea versicolor"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The patient's presentation of nodules, abscesses, and sinus tracts in apocrine gland-rich areas is consistent with hidradenitis suppurativa."
+    },
+    {
+        "question": "A patient is diagnosed with ocular rosacea, experiencing blepharitis and conjunctival injection. What is the appropriate treatment?",
+        "choices": [
+            "Oral isotretinoin",
+            "Low-dose doxycycline",
+            "Topical retinoids",
+            "Topical metronidazole"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ocular rosacea is treated with low-dose doxycycline, which helps reduce inflammation."
+    },
+    {
+        "question": "A 28-year-old woman is diagnosed with alopecia areata, presenting with circular areas of hair loss. Which autoimmune condition is most commonly associated with alopecia areata?",
+        "choices": [
+            "Vitiligo",
+            "Systemic lupus erythematosus",
+            "Graves' disease",
+            "Atopic dermatitis"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Alopecia areata is frequently associated with other autoimmune conditions like vitiligo."
+    },
+    {
+        "question": "A 40-year-old man presents with a scaly, erythematous patch on his scalp, diagnosed as tinea capitis. Which diagnostic method is commonly used to confirm the diagnosis?",
+        "choices": [
+            "Skin biopsy",
+            "Dermatoscopy",
+            "KOH scraping",
+            "Wood's lamp examination"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tinea capitis is confirmed with KOH scraping, where dermatophyte fungi can be identified microscopically."
+    },
+    {
+        "question": "A patient with rosacea experiences frequent flushing and facial erythema. Which medication is used to reduce flushing symptoms?",
+        "choices": [
+            "Topical retinoids",
+            "Topical metronidazole",
+            "Topical alpha2 agonists (bromonidine)",
+            "Oral antibiotics"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Topical alpha2 agonists (e.g., bromonidine) are used to reduce flushing in rosacea by vasoconstricting blood vessels."
+    },
+    {
+        "question": "A patient presents with multiple inflammatory nodules, sterile abscesses, and sinus tracts in the groin and buttocks. Surgical excision and anti-TNF therapy are considered. Which stage of hidradenitis suppurativa does this represent?",
+        "choices": [
+            "Hurley Stage I",
+            "Hurley Stage II",
+            "Hurley Stage III",
+            "Post-inflammatory stage"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hurley Stage III hidradenitis suppurativa is characterized by multiple sinus tracts and scarring, often requiring surgery and anti-TNF therapy."
+    },
+{
+    "question": "Which muscle is responsible for initiating abduction of the arm?",
+    "choices": [
+        "Deltoid",
+        "Supraspinatus",
+        "Infraspinatus",
+        "Teres minor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The supraspinatus muscle initiates the first 15 degrees of arm abduction before the deltoid takes over."
+},
+{
+    "question": "Which nerve innervates the deltoid muscle?",
+    "choices": [
+        "Radial nerve",
+        "Suprascapular nerve",
+        "Axillary nerve",
+        "Musculocutaneous nerve"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The deltoid is innervated by the axillary nerve (C5-C6)."
+},
+{
+    "question": "Which ligament is involved in stabilizing the acromioclavicular joint?",
+    "choices": [
+        "Costoclavicular ligament",
+        "Coracoclavicular ligament",
+        "Coracoacromial ligament",
+        "Transverse humeral ligament"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The coracoclavicular ligament stabilizes the acromioclavicular joint and consists of the conoid and trapezoid ligaments."
+},
+{
+    "question": "What is the main blood supply to the supraspinatus muscle?",
+    "choices": [
+        "Circumflex scapular artery",
+        "Suprascapular artery",
+        "Dorsal scapular artery",
+        "Posterior circumflex humeral artery"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The suprascapular artery supplies the supraspinatus and infraspinatus muscles."
+},
+{
+    "question": "What structure passes through the radial groove of the humerus?",
+    "choices": [
+        "Ulnar nerve",
+        "Median nerve",
+        "Radial nerve",
+        "Axillary nerve"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The radial nerve runs in the radial (spiral) groove of the humerus along with the deep brachial artery."
+},
+{
+    "question": "A 34-year-old male presents after a fall on an outstretched hand, complaining of shoulder pain. Radiographs show a fractured clavicle. The patient’s shoulder appears drooped. What muscle is unable to hold up the upper limb in this injury?",
+    "choices": [
+        "Trapezius",
+        "Deltoid",
+        "Pectoralis major",
+        "Supraspinatus"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The trapezius helps support the upper limb. After a clavicular fracture, the shoulder droops due to the loss of structural support."
+},
+{
+    "question": "A patient sustains an anterior shoulder dislocation. Which nerve is most at risk of injury in this type of dislocation?",
+    "choices": [
+        "Radial nerve",
+        "Ulnar nerve",
+        "Musculocutaneous nerve",
+        "Axillary nerve"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The axillary nerve runs close to the inferior aspect of the glenohumeral joint, making it vulnerable in an anterior dislocation."
+},
+{
+    "question": "A 45-year-old man presents with shoulder pain and difficulty initiating abduction of the arm. Examination reveals weakness in the muscle responsible for the first 15 degrees of abduction. Which nerve is most likely affected?",
+    "choices": [
+        "Axillary nerve",
+        "Radial nerve",
+        "Suprascapular nerve",
+        "Musculocutaneous nerve"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The suprascapular nerve innervates the supraspinatus muscle, which initiates abduction."
+},
+{
+    "question": "A 50-year-old female presents with shoulder instability and frequent dislocations. Imaging shows an injury to the rotator cuff. Which muscle of the rotator cuff is primarily responsible for preventing superior displacement of the humeral head?",
+    "choices": [
+        "Infraspinatus",
+        "Subscapularis",
+        "Teres minor",
+        "Supraspinatus"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The supraspinatus muscle plays a key role in stabilizing the humeral head by keeping it compressed in the glenoid fossa."
+},
+{
+    "question": "A 55-year-old woman presents with difficulty abducting her arm beyond 90 degrees. Imaging reveals a rotator cuff injury. Which muscle injury would most likely impair her ability to abduct her arm past 90 degrees?",
+    "choices": [
+        "Supraspinatus",
+        "Subscapularis",
+        "Serratus anterior",
+        "Deltoid"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The serratus anterior, innervated by the long thoracic nerve, allows upward rotation of the scapula, which is necessary for abduction beyond 90 degrees."
+},
+{
+    "question": "A 60-year-old man has difficulty extending his arm and forearm after suffering a mid-shaft humerus fracture. Which nerve is most likely affected?",
+    "choices": [
+        "Axillary nerve",
+        "Radial nerve",
+        "Musculocutaneous nerve",
+        "Ulnar nerve"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The radial nerve runs in the radial groove of the humerus and innervates muscles responsible for arm and forearm extension."
+},
+{
+    "question": "A 35-year-old woman presents after a motor vehicle accident with weakness in adduction and medial rotation of her arm. Which muscle is most likely affected?",
+    "choices": [
+        "Deltoid",
+        "Latissimus dorsi",
+        "Supraspinatus",
+        "Infraspinatus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The latissimus dorsi is responsible for adduction, extension, and medial rotation of the arm, and is innervated by the thoracodorsal nerve."
+},
+{
+    "question": "What is the most common benign epithelial lesion in middle-aged and older adults?",
+    "choices": [
+        "Actinic keratosis",
+        "Seborrheic keratosis",
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Seborrheic keratosis is a very common benign lesion found in middle-aged and older adults."
+},
+{
+    "question": "Which subtype of human papillomavirus (HPV) is most commonly associated with verruca vulgaris (common wart)?",
+    "choices": [
+        "HPV-1",
+        "HPV-2",
+        "HPV-6",
+        "HPV-11"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Verruca vulgaris (common wart) is most commonly associated with HPV-2."
+},
+{
+    "question": "What is the characteristic histological feature of basal cell carcinoma?",
+    "choices": [
+        "Keratin pearls",
+        "Koilocytosis",
+        "Peripheral palisading",
+        "Vascular invasion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Basal cell carcinoma is characterized by peripheral palisading of the tumor cells and stromal retraction."
+},
+{
+    "question": "Which layer of the skin is typically involved in an epidermal inclusion cyst?",
+    "choices": [
+        "Dermis",
+        "Epidermis",
+        "Subcutis",
+        "Papillary dermis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "An epidermal inclusion cyst originates from the epidermis, specifically the follicular infundibulum."
+},
+{
+    "question": "Which lesion is most commonly associated with a high risk of progression to squamous cell carcinoma?",
+    "choices": [
+        "Seborrheic keratosis",
+        "Actinic keratosis",
+        "Basal cell carcinoma",
+        "Merkel cell carcinoma"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Actinic keratosis is a premalignant lesion that can progress to squamous cell carcinoma."
+},
+{
+    "question": "A 58-year-old man presents with a pearly, pink, dome-shaped nodule with telangiectasias on his nose. Biopsy shows basaloid cells with peripheral palisading. What is the most likely diagnosis?",
+    "choices": [
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Seborrheic keratosis",
+        "Melanoma"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This presentation is characteristic of basal cell carcinoma, the most common skin cancer."
+},
+{
+    "question": "A 45-year-old man has a hyperkeratotic lesion on his scalp that has been slowly enlarging. A biopsy reveals full-thickness epidermal atypia with no dermal invasion. What is the most likely diagnosis?",
+    "choices": [
+        "Squamous cell carcinoma in situ",
+        "Basal cell carcinoma",
+        "Actinic keratosis",
+        "Melanoma"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Squamous cell carcinoma in situ, also known as Bowen's disease, is characterized by full-thickness atypia confined to the epidermis."
+},
+{
+    "question": "A 60-year-old woman presents with a pigmented lesion on her upper back. It is asymmetric, has an irregular border, varies in color, and is larger than 6 mm. Which of the following features most suggests melanoma?",
+    "choices": [
+        "Symmetry",
+        "Irregular border",
+        "Uniform color",
+        "Diameter <6 mm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Melanoma often presents with asymmetry, irregular borders, color variation, and a diameter greater than 6 mm."
+},
+{
+    "question": "A 65-year-old man presents with a non-healing ulcer on his lower lip. A biopsy reveals keratin pearls and invasion of the dermis. What is the most likely diagnosis?",
+    "choices": [
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Melanoma",
+        "Actinic keratosis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Squamous cell carcinoma often presents as a non-healing ulcer, with keratin pearls and dermal invasion on histology."
+},
+{
+    "question": "A 52-year-old woman with a history of chronic sun exposure presents with a rough, scaly lesion on her face. Histological examination reveals hyperkeratosis and parakeratosis with basal layer dysplasia. What is the most appropriate management?",
+    "choices": [
+        "Cryotherapy",
+        "Mohs surgery",
+        "Wide excision",
+        "Topical corticosteroids"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cryotherapy is often used to treat actinic keratosis, a premalignant lesion associated with chronic sun exposure."
+},
+{
+    "question": "A 70-year-old man with a long history of sun exposure presents with a firm, ulcerated nodule on his scalp. Biopsy reveals dermal invasion by atypical squamous cells. What is the most likely diagnosis?",
+    "choices": [
+        "Basal cell carcinoma",
+        "Squamous cell carcinoma",
+        "Seborrheic keratosis",
+        "Merkel cell carcinoma"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The patient's presentation is consistent with squamous cell carcinoma, which commonly affects sun-exposed areas."
+},
+{
+    "question": "A 58-year-old man who underwent a kidney transplant 5 years ago presents with a non-healing ulcerated lesion on his lower lip. He has been on chronic immunosuppressive therapy since his transplant. Biopsy of the lesion reveals malignant keratinocytes invading the dermis. What is the most likely diagnosis?",
+    "choices": ["Basal cell carcinoma", "Malignant melanoma", "Squamous cell carcinoma", "Kaposi sarcoma"],
+    "correctAnswer": 2,
+    "explanation": "The most likely diagnosis is squamous cell carcinoma. Immunosuppressed individuals, such as organ transplant recipients, have an increased risk of developing SCC, which often presents as non-healing ulcerated lesions. Biopsy confirms the diagnosis by showing malignant keratinocytes invading the dermis."
+},
+{
+    "question": "A 32-year-old woman presents with a small, mobile, soft nodule on her upper arm that has been present for years. The lesion is excised and shows mature adipose tissue on histology. What is the most likely diagnosis?",
+    "choices": [
+        "Dermatofibroma",
+        "Lipoma",
+        "Neurofibroma",
+        "Basal cell carcinoma"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lipomas are common benign tumors composed of mature adipose tissue and are often soft and mobile."
+},
+{
+    "question": "Which bacterial pathogen is most commonly associated with non-bullous impetigo?",
+    "choices": [
+        "Staphylococcus aureus",
+        "Streptococcus pneumoniae",
+        "Pseudomonas aeruginosa",
+        "Escherichia coli"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Staphylococcus aureus is the most common cause of non-bullous impetigo, though Streptococcus pyogenes can also be involved."
+},
+{
+    "question": "What is the first-line treatment for mild cases of non-bullous impetigo with a few lesions?",
+    "choices": [
+        "Oral clindamycin",
+        "Topical mupirocin",
+        "Oral amoxicillin/clavulanate",
+        "Topical fluconazole"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For mild non-bullous impetigo with a few lesions, topical mupirocin is recommended."
+},
+{
+    "question": "Which bacteria is most commonly associated with erysipelas?",
+    "choices": [
+        "Staphylococcus aureus",
+        "Streptococcus pyogenes",
+        "Haemophilus influenzae",
+        "Pseudomonas aeruginosa"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Erysipelas is most commonly caused by Streptococcus pyogenes."
+},
+{
+    "question": "What is the typical causative organism for necrotizing fasciitis type II?",
+    "choices": [
+        "Staphylococcus aureus",
+        "Streptococcus pyogenes",
+        "Clostridium perfringens",
+        "Vibrio vulnificus"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Necrotizing fasciitis type II is typically caused by Streptococcus pyogenes."
+},
+{
+    "question": "A 48-year-old man developed severe pain, swelling, and tenderness of the right shoulder one week after a stab wound. He is febrile and toxic-appearing. On exam, there is marked swelling, deep tenderness, cutaneous anesthesia, and palpable crepitus. What is the most likely diagnosis?",
+    "choices": [
+        "Bullous impetigo",
+        "Cellulitis",
+        "Ecthyma gangrenosum",
+        "Gas gangrene",
+        "Necrotizing fasciitis"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The clinical picture, including palpable crepitus, strongly suggests gas gangrene, typically caused by Clostridium perfringens."
+},
+{
+    "question": "A 75-year-old woman developed a bright-red, sharply demarcated lesion with peau d'orange appearance on her cheek. She also has fever and chills. What is the most likely causative organism?",
+    "choices": [
+        "Clostridium perfringens",
+        "Haemophilus influenzae",
+        "Staphylococcus aureus",
+        "Streptococcus pyogenes"
+    ],
+    "correctAnswer": 3,
+    "explanation": "This presentation, including the sharply demarcated lesion and systemic symptoms, is typical of erysipelas caused by Streptococcus pyogenes."
+},
+{
+    "question": "A 52-year-old diabetic woman presents with fever, diffuse redness, and several purulent bullae on her left lower leg. What is the most likely causative organism?",
+    "choices": [
+        "Clostridium perfringens",
+        "Mixed flora",
+        "Staphylococcus aureus",
+        "Vibrio vulnificus"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In a diabetic patient with soft tissue infection and bullae, Staphylococcus aureus, especially methicillin-resistant Staphylococcus aureus (MRSA), is a common cause."
+},
+{
+    "question": "A 30-year-old man in Florida presents with a tender, fluctuant lesion on his abdomen two days after a suspected brown recluse spider bite. What is the most likely cause of this lesion?",
+    "choices": [
+        "Bacillus anthracis",
+        "Brown recluse toxin",
+        "Staphylococcus aureus (MRSA)",
+        "Streptococcus pyogenes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In this case, the fluctuant lesion is more likely due to an MRSA abscess than the brown recluse venom."
+},
+{
+    "question": "A 49-year-old obese woman with chronic leg edema develops worsening erythema, swelling, and pain in her left leg. Her WBC count is 18,000 and she is febrile. What is the most likely diagnosis?",
+    "choices": [
+        "Bullous impetigo",
+        "Cellulitis",
+        "Erysipelas",
+        "Necrotizing fasciitis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The presentation is consistent with cellulitis, a bacterial infection involving the deep dermis and subcutaneous tissues."
+},
+{
+    "question": "A 30-year-old soccer player develops increasing pain, redness, and a red streak extending from an abrasion on his knee to his thigh. What is the most likely finding on Gram stain?",
+    "choices": [
+        "Gram-negative coccobacilli",
+        "Gram-positive cocci in chains",
+        "Gram-positive cocci in clusters",
+        "Mixed microbial flora"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The red streak suggests lymphangitis, most commonly caused by Streptococcus pyogenes, which appears as Gram-positive cocci in chains on Gram stain."
+},
+{
+    "question": "A 52-year-old IV drug user presents with fever, leg swelling, and erythema after stepping on a sharp object while wading in a lake. Blood cultures are most likely to grow which organism?",
+    "choices": [
+        "Aeromonas hydrophila",
+        "Pseudomonas aeruginosa",
+        "Staphylococcus aureus",
+        "Vibrio vulnificus"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In this case, Vibrio vulnificus is the likely cause of cellulitis following exposure to warm salt water, especially in an immunocompromised patient."
+},
+{
+    "question": "A 27-year-old nurse presents with recurrent redness, tenderness, and blistering of the distal part of her index finger. What is the most likely diagnosis?",
+    "choices": [
+        "Allergic reaction to latex gloves",
+        "Herpetic whitlow",
+        "Onychomycosis",
+        "Osteomyelitis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Herpetic whitlow is a recurrent viral infection of the fingers caused by HSV, characterized by tenderness and vesicles."
+},
+{
+    "question": "A 48-year-old man developed severe pain, swelling, and tenderness of the right shoulder 1 week following a stab wound. He is febrile and toxic-appearing. On exam, there is marked swelling, deep tenderness, and cutaneous anesthesia. The skin is not easily compressed when palpated, but there is palpable crepitus. The most likely diagnosis is which of the following?",
+    "choices": [
+        "Bullous impetigo",
+        "Cellulitis",
+        "Ecthyma gangrenosum",
+        "Gas gangrene",
+        "Necrotizing fasciitis"
+    ],
+    "correctAnswer": 4,
+    "explanation": "The presentation of crepitus, pain, and toxic appearance is consistent with necrotizing fasciitis."
+},
+{
+    "question": "An 81-year-old woman developed the abrupt onset of markedly worsening pain in the area of the operative wound of a recent total hip replacement. On exam, she is apprehensive and in great pain. The wound is red with dark bullous lesions. She has a rapid tachycardia, a BP of 90/40, and marked confusion. The most likely diagnosis is which of the following?",
+    "choices": [
+        "Bullous impetigo",
+        "Cellulitis",
+        "Ecthyma gangrenosum",
+        "Gas gangrene",
+        "Necrotizing fasciitis"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The clinical signs of hypotension, tachycardia, and dark bullous lesions suggest gas gangrene."
+},
+{
+    "question": "A 35-year-old man with Crohn’s disease comes to a physician because of a chronic ulcerative lesion on his right leg for 3 months unresponsive to multiple courses of antibiotics. The most likely diagnosis is which of the following?",
+    "choices": [
+        "Bullous impetigo",
+        "Cellulitis",
+        "Gas gangrene",
+        "Necrotizing fasciitis",
+        "Pyoderma gangrenosum"
+    ],
+    "correctAnswer": 4,
+    "explanation": "Pyoderma gangrenosum is associated with chronic ulcerative lesions, particularly in patients with Crohn’s disease."
+},
+{
+    "question": "A two-year-old Mexican girl is brought to an emergency room for a spotty, itchy rash at the site of insect bites on her body, which has been present for 3 weeks. Exam shows a cranky child who is not ill-appearing and afebrile. There are several yellowish crusted lesions of varying sizes surrounded by an erythematous border. The most likely cause of this rash is which of the following?",
+    "choices": [
+        "Propionibacterium acnes",
+        "Pseudomonas aeruginosa",
+        "Staphylococcus aureus",
+        "Streptococcus agalactiae",
+        "Streptococcus pyogenes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Impetigo is typically caused by Staphylococcus aureus and Streptococcus pyogenes."
+},
+{
+    "question": "A 75-year-old woman developed a bright-red circumscribed lesion near the fissure at the angle of her left external naris. Over the next several days, the area enlarged, became tense and sharply demarcated, and was very tender. There was edema in the epidermis giving the area a 'peau d'orange' appearance. Associated symptoms included fever and rigors. Her WBC count was 22,000 with a left shift. The most likely cause is which of the following?",
+    "choices": [
+        "Clostridium perfringens",
+        "Haemophilus influenzae",
+        "Staphylococcus aureus",
+        "Streptococcus agalactiae",
+        "Streptococcus pyogenes"
+    ],
+    "correctAnswer": 4,
+    "explanation": "The 'peau d'orange' appearance and sharply demarcated lesion are classic for erysipelas, commonly caused by Streptococcus pyogenes."
+},
+{
+    "question": "A 28-year-old soccer player suffered an abrasion on his knee during a game. Within 48 hours, he developed increasing pain and redness at the site, and low-grade fever and malaise. On exam, he was febrile (39°C), and the area was red and tender with a thin watery exudate and a red streak extending to the mid-thigh. A tender inguinal node is present. A Gram’s stain of the lesion would most likely show which of the following?",
+    "choices": [
+        "Gram-negative coccobacilli",
+        "Gram-positive cocci in chains",
+        "Gram-positive cocci in clusters",
+        "Mixed microbial flora",
+        "Pleomorphic budding yeast"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The red streak and tender node suggest lymphangitis caused by Group A streptococcus, which appears as Gram-positive cocci in chains."
+},
+{
+    "question": "A 30-year-old Florida man comes to a physician for evaluation of a suspected brown recluse spider bite. He recalls no contact with spiders but was working under houses two days earlier. On exam, he is febrile (101°F) but not toxic-appearing. The lesion in question is on the abdomen, and it is rounded, 3 cm in diameter, red, tender, and fluctuant. The most likely cause is which of the following?",
+    "choices": [
+        "Bacillus anthracis",
+        "Brown recluse toxin",
+        "Staphylococcus aureus (MRSA)",
+        "Streptococcus agalactiae",
+        "Streptococcus pyogenes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A fluctuant lesion suggests an abscess caused by MRSA, not a brown recluse spider bite, which is rare in Florida."
+},
+{
+    "question": "A 20-year-old man has had recurrent 'boils' in both axillae and in his groin since age 13, requiring multiple courses of antibiotics and surgical drainage. He presents with another boil but no systemic complaints. A Gram’s stain of drainage from one of these lesions would likely show which of the following?",
+    "choices": [
+        "Gram-negative coccobacilli",
+        "Gram-negative rods",
+        "Gram-positive cocci in clusters",
+        "Gram-positive cocci in chains",
+        "Mixed flora"
+    ],
+    "correctAnswer": 4,
+    "explanation": "Recurrent boils (furuncles) are consistent with hidradenitis suppurativa, which typically presents with mixed flora on Gram stain."
+},
+{
+    "question": "A 55-year-old man stepped on a shell while wading in a lake. Within 48 hours, pain and swelling developed in the wound, followed by fever, chills, and prostration. On exam, he is febrile (40°C) and toxic-appearing. His left lower leg is diffusely red, edematous, and tender. This clinical picture suggests that his blood cultures will likely yield which of the following?",
+    "choices": [
+        "Aeromonas hydrophila",
+        "Pseudomonas aeruginosa",
+        "Staphylococcus aureus",
+        "Streptococcus pyogenes",
+        "Vibrio vulnificus"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The history of lake exposure and subsequent systemic symptoms strongly suggests infection by Aeromonas hydrophila."
+},
+{
+    "question": "A 52-year-old diabetic woman with chronic leg edema developed pain, swelling, and redness of her left lower leg. On exam, she is toxic and febrile (102°F). Her WBC is 23,000 and her blood glucose is 270 mg/dL. The leg shows diffuse redness and swelling, moderate tenderness, and several bullae containing purulent fluid. The most likely cause is which of the following?",
+    "choices": [
+        "Clostridium perfringens",
+        "Mixed flora",
+        "Staphylococcus aureus",
+        "Streptococcus pyogenes",
+        "Vibrio vulnificus"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The clinical presentation of bullae in a diabetic patient points to Staphylococcus aureus as the most common cause."
+},
+{
+    "question": "A 49-year-old obese woman with a 6-year history of recurrent leg edema developed worsening edema in her left lower extremity, marked erythema, pain, and tenderness, making her unable to walk. She has a temperature of 39°C. Her WBC count is 18,000. The most likely diagnosis is which of the following?",
+    "choices": [
+        "Bullous impetigo",
+        "Cellulitis",
+        "Erysipelas",
+        "Gas gangrene",
+        "Necrotizing fasciitis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The clinical presentation of erythema, swelling, and tenderness suggests cellulitis, which is often caused by community-acquired MRSA."
+},
+{
+    "question": "A 27-year-old nurse comes to a physician because of the second recurrence of redness, tenderness, and blister formation in the same digit. On exam, the distal part of her index finger is red and tender with a cluster of coalescent vesicles around the nail bed. This clinical picture suggests which of the following?",
+    "choices": [
+        "Allergic reaction to latex gloves",
+        "Herpetic whitlow",
+        "Onychomycosis",
+        "Osteomyelitis of the distal phalanx",
+        "Staphylococcal paronychial infection"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The cluster of vesicles on the finger is classic for herpetic whitlow, typically caused by HSV-2."
+},
+{
+    "question": "A 32-year-old woman presents with pruritic pink wheals that appear and disappear within 24 hours. The lesions are annular and arcuate. What is the underlying pathophysiology of this condition?",
+    "choices": [
+        "T cell-mediated immune response",
+        "Mast cell degranulation with histamine release",
+        "Immune-complex deposition",
+        "Direct damage to keratinocytes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Urticaria is caused by mast cell degranulation, which leads to histamine release, increased capillary permeability, and fluid extravasation."
+},
+{
+    "question": "A patient presents with urticaria that has persisted for over 6 weeks. Which of the following is a potential underlying cause?",
+    "choices": [
+        "Food allergies",
+        "Streptococcal infection",
+        "Idiopathic autoimmune disorder",
+        "Penicillin use"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Chronic urticaria (lasting >6 weeks) is often idiopathic or autoimmune in nature, unlike acute urticaria which is frequently due to drugs, food, or infections."
+},
+{
+    "question": "A patient experiences a drug-induced morbilliform rash characterized by blanchable macules and papules. Which type of hypersensitivity reaction is this most likely?",
+    "choices": [
+        "Type I (IgE-mediated)",
+        "Type II (cytotoxic)",
+        "Type III (immune complex-mediated)",
+        "Type IV (T cell-mediated)"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Morbilliform drug reactions are often type IV hypersensitivity reactions, mediated by T cells."
+},
+{
+    "question": "A 45-year-old male develops a maculopapular rash 5 days after starting penicillin. The rash is non-blanchable and is accompanied by low-grade fever. What is the most likely diagnosis?",
+    "choices": [
+        "Erythema multiforme",
+        "Stevens-Johnson syndrome",
+        "Morbilliform drug reaction",
+        "Fixed drug eruption"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Morbilliform drug reactions typically present with a diffuse, maculopapular rash that may appear 5 to 14 days after starting the medication."
+},
+{
+    "question": "Which of the following drugs is most commonly associated with the development of DRESS (Drug Rash with Eosinophilia and Systemic Symptoms)?",
+    "choices": [
+        "Aspirin",
+        "Anticonvulsants",
+        "Penicillin",
+        "NSAIDs"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Anticonvulsants (e.g., phenytoin, carbamazepine) and sulfonamides are well-known triggers of DRESS."
+},
+{
+    "question": "A patient presents with a late-onset rash (2-6 weeks after starting a drug) accompanied by fever, facial edema, and eosinophilia. What is the most likely diagnosis?",
+    "choices": [
+        "Fixed drug eruption",
+        "Morbilliform drug reaction",
+        "DRESS (Drug Rash with Eosinophilia and Systemic Symptoms)",
+        "Stevens-Johnson Syndrome"
+    ],
+    "correctAnswer": 2,
+    "explanation": "DRESS presents with a late-onset rash, systemic symptoms, and eosinophilia, often after 2-6 weeks of drug exposure."
+},
+{
+    "question": "A 30-year-old man presents with 'three-zone' target lesions on his distal extremities and one mucosal site involvement. What is the most likely underlying trigger?",
+    "choices": [
+        "Mycoplasma infection",
+        "Herpes simplex virus",
+        "NSAID use",
+        "Sulfonamide antibiotics"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Erythema multiforme is often triggered by infections, particularly herpes simplex virus and Mycoplasma."
+},
+{
+    "question": "A patient develops widespread blisters on purpuric macules, involving multiple mucosal sites. The patient is febrile and appears acutely ill. Which of the following is the most likely diagnosis?",
+    "choices": [
+        "Erythema multiforme",
+        "DRESS",
+        "Stevens-Johnson Syndrome",
+        "Toxic epidermal necrolysis"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Stevens-Johnson Syndrome presents with blistering on purpuric macules, mucosal involvement, and systemic symptoms, often following drug exposure."
+},
+{
+    "question": "Which of the following characteristics differentiates toxic epidermal necrolysis (TEN) from Stevens-Johnson syndrome (SJS)?",
+    "choices": [
+        "Nikolsky sign",
+        "Mucosal involvement",
+        "Drug-induced",
+        "Extent of epidermal detachment"
+    ],
+    "correctAnswer": 3,
+    "explanation": "TEN involves greater than 30% of epidermal detachment, whereas SJS involves less than 10%."
+},
+{
+    "question": "A patient presents with extensive epidermal loss (>30% body surface area), positive Nikolsky sign, and mucosal involvement after starting allopurinol. What is the most appropriate next step in management?",
+    "choices": [
+        "Start high-dose corticosteroids",
+        "Aggressively debride the blisters",
+        "Discontinue allopurinol and provide supportive care",
+        "Administer broad-spectrum antibiotics"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Toxic epidermal necrolysis (TEN) is managed with supportive care, similar to burn patients, and the triggering drug (allopurinol in this case) should be discontinued."
+},
+{
+    "question": "A 40-year-old woman presents with erythematous, edematous plaques that heal with hyperpigmentation. She reports that she experiences similar lesions at the same site whenever she takes NSAIDs. What is the most likely diagnosis?",
+    "choices": [
+        "Fixed drug eruption",
+        "Morbilliform drug reaction",
+        "DRESS",
+        "Stevens-Johnson Syndrome"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fixed drug eruptions are characterized by recurrent lesions at the same site, often triggered by NSAIDs or antibiotics."
+},
+{
+    "question": "Which of the following treatments is recommended for recurrent episodes of erythema multiforme associated with herpes simplex virus?",
+    "choices": [
+        "Systemic corticosteroids",
+        "Antiviral suppressive therapy",
+        "Topical corticosteroids",
+        "IV immunoglobulin"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Recurrent erythema multiforme associated with HSV is managed with suppressive oral antiviral therapy."
+},
+{
+    "question": "A 30-year-old male presents with acute low back pain following a sports injury. His pain is sharp and radiates down his right leg. He rates the pain as 8/10. Which of the following is the most appropriate initial pharmacotherapy?",
+    "choices": [
+        "Acetaminophen",
+        "Ibuprofen",
+        "Morphine",
+        "Amitriptyline"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ibuprofen, an NSAID, is a first-line treatment for acute musculoskeletal pain and inflammation."
+},
+{
+    "question": "A 55-year-old woman with osteoarthritis reports chronic pain in her knees that worsens with activity. She has been taking acetaminophen with little relief. Which of the following would be the next best pharmacologic treatment?",
+    "choices": [
+        "Morphine",
+        "Celecoxib",
+        "Gabapentin",
+        "Hydrocodone"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Celecoxib, a selective COX-2 inhibitor, is effective for chronic pain management in osteoarthritis with a lower risk of gastrointestinal side effects compared to non-selective NSAIDs."
+},
+{
+    "question": "A patient with chronic non-cancer pain has been taking an opioid for several months. Which of the following adverse effects is most likely to occur with long-term opioid therapy?",
+    "choices": [
+        "Respiratory depression",
+        "Tolerance and dependence",
+        "Acute renal failure",
+        "Gastrointestinal bleeding"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Chronic opioid use is associated with the development of tolerance and physical dependence."
+},
+{
+    "question": "A 45-year-old man with diabetic neuropathy presents with burning pain in his feet. Which of the following medications would be most appropriate to treat his neuropathic pain?",
+    "choices": [
+        "Ibuprofen",
+        "Amitriptyline",
+        "Morphine",
+        "Celecoxib"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amitriptyline, a tricyclic antidepressant, is often used to treat neuropathic pain, including diabetic neuropathy."
+},
+{
+    "question": "A 20-year-old man with a history of sickle cell disease presents to the emergency department with severe pain in his back and legs. He reports that his usual hydrocodone has not provided relief. Which of the following would be the most appropriate next step in managing his pain?",
+    "choices": [
+        "Morphine",
+        "Ibuprofen",
+        "Codeine",
+        "Gabapentin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In a vaso-occlusive crisis, opioids like morphine are often required for pain management."
+},
+{
+    "question": "A 70-year-old woman with a history of chronic renal disease presents with severe musculoskeletal pain. Which of the following NSAIDs should be avoided due to its high risk of renal toxicity?",
+    "choices": [
+        "Celecoxib",
+        "Meloxicam",
+        "Ibuprofen",
+        "Ketorolac"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Ketorolac has a high risk of renal toxicity and should be avoided in patients with renal disease."
+},
+{
+    "question": "A 25-year-old woman presents with primary dysmenorrhea and requests pain relief. Which of the following would be the best treatment option for this patient?",
+    "choices": [
+        "Ibuprofen",
+        "Codeine",
+        "Fentanyl patch",
+        "Amitriptyline"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NSAIDs like ibuprofen are the first-line treatment for primary dysmenorrhea."
+},
+{
+    "question": "A 65-year-old male undergoing surgery is placed on patient-controlled analgesia (PCA) with hydromorphone. What is the typical IV dose interval for hydromorphone in PCA?",
+    "choices": [
+        "1 mg every 10 minutes",
+        "0.5 mg every 15 minutes",
+        "0.2 mg every 10 minutes",
+        "0.5 mg every 30 minutes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hydromorphone is typically administered as 0.2 mg IV every 10 minutes in a PCA setting."
+},
+{
+    "question": "A patient presents with severe postoperative pain after an orthopedic procedure. The physician decides to administer an epidural with a combination of an opioid and a local anesthetic. Which of the following opioids is commonly used for epidural analgesia?",
+    "choices": [
+        "Methadone",
+        "Hydrocodone",
+        "Morphine",
+        "Fentanyl"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Fentanyl is commonly used for epidural analgesia due to its potency and rapid onset."
+},
+{
+    "question": "A 45-year-old male with a history of chronic cancer pain has been taking opioids for several months. His physician decides to add a co-analgesic for better pain control. Which of the following agents is appropriate for managing opioid-induced hyperalgesia?",
+    "choices": [
+        "Ibuprofen",
+        "Ketamine",
+        "Codeine",
+        "Lidocaine"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ketamine, an NMDA receptor antagonist, is often used to manage opioid-induced hyperalgesia."
+},
+{
+    "question": "A 22-year-old man presents with sharp, shooting pain in his lower back that radiates down his leg. After an MRI confirms a herniated disc, which of the following would be the first-line pharmacotherapy?",
+    "choices": [
+        "Oxycodone",
+        "Duloxetine",
+        "Acetaminophen",
+        "Ibuprofen"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NSAIDs like ibuprofen are the first-line treatment for radicular pain due to herniated discs."
+},
+{
+    "question": "A 28-year-old woman with fibromyalgia is seeking pharmacological treatment for her widespread musculoskeletal pain. Which of the following medications is most appropriate for long-term management of her condition?",
+    "choices": [
+        "Tramadol",
+        "Gabapentin",
+        "Acetaminophen",
+        "Naproxen"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Gabapentin, an anticonvulsant, is frequently used to manage fibromyalgia-related chronic pain."
+}
 ]
