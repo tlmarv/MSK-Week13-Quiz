@@ -17,7 +17,7 @@ fetch('questions.json')
         // Add an 'answered' property to each question to track whether it's been answered
         orderedData = data.map(q => ({ ...q, answered: false }));
         shuffle(orderedData);  // Shuffle the full question list
-        quizData = orderedData.slice(0, 60);  // Select the first 60 questions
+        quizData = orderedData.slice(0, orderedData.length);  // Select the first 60 questions
         loadQuestion();  // Load the first question after fetching and randomizing
     })
     .catch(error => console.error('Error loading quiz data:', error));
