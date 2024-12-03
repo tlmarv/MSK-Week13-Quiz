@@ -710,18 +710,6 @@
     "explanation": "Necrotizing fasciitis type II is typically caused by Streptococcus pyogenes."
 },
 {
-    "question": "A 48-year-old man developed severe pain, swelling, and tenderness of the right shoulder one week after a stab wound. He is febrile and toxic-appearing. On exam, there is marked swelling, deep tenderness, cutaneous anesthesia, and palpable crepitus. What is the most likely diagnosis?",
-    "choices": [
-        "Bullous impetigo",
-        "Cellulitis",
-        "Ecthyma gangrenosum",
-        "Gas gangrene",
-        "Necrotizing fasciitis"
-    ],
-    "correctAnswer": 3,
-    "explanation": "The clinical picture, including palpable crepitus, strongly suggests gas gangrene, typically caused by Clostridium perfringens."
-},
-{
     "question": "A 75-year-old woman developed a bright-red, sharply demarcated lesion with peau d'orange appearance on her cheek. She also has fever and chills. What is the most likely causative organism?",
     "choices": [
         "Clostridium perfringens",
